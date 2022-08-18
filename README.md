@@ -1,4 +1,4 @@
-Hello
+The website is built with React.js and Firebase.
 
 This website serves as the guide to the Bagalkot district(in Karnataka, India). 
 
@@ -11,7 +11,3 @@ This website shows the places which are near to you.
 Directions are provided for the destination.
 
 Voice navigation is provided on this website.
-
-The website is built with React.js and Firebase.
-
-Thank you!
