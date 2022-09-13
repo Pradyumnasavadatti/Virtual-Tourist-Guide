@@ -1,4 +1,4 @@
-## Virtual Tourist Guide
+# Virtual Tourist Guide
 
 The website is built with React.js and Firebase.
 
