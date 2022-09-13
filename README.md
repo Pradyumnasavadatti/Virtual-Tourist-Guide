@@ -1,3 +1,5 @@
+## Virtual Tourist Guide
+
 The website is built with React.js and Firebase.
 
 This website serves as the guide to the Bagalkot district(in Karnataka, India). 
