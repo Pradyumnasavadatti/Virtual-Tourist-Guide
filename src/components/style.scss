@@ -1,0 +1,356 @@
+h1 {
+  font-size: 2.2vmax;
+}
+.window {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.directive {
+  width: 30%;
+  height: 70%;
+  background-color: #3498db;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  display: flex;
+  box-shadow: 0 0 1vmax 0.5vmax rgba(15, 15, 15, 0.281);
+}
+.directive1 {
+  width: 50%;
+  height: 100%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.directive2 {
+  width: 50%;
+  height: 100%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.main {
+  width: 35%;
+  height: 90%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 0 1vmax 0.5vmax rgba(15, 15, 15, 0.281);
+}
+.main1 {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: white;
+}
+.main2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  z-index: -1;
+  background-color: white;
+}
+#main3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.3vmax);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#fp1 {
+  width: 30%;
+  height: 40%;
+  background-color: #3498db;
+  box-shadow: 0 0 3vmax 1vmax #3498db;
+  border: 0.2vmax solid #3498db;
+}
+#fphead {
+  width: 100%;
+  height: 40%;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fpcontent {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fptxt {
+  color: #3498db;
+}
+#fptxtdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.3vmax;
+}
+#fpform1 {
+  width: 90%;
+  height: 90%;
+}
+#fpform2 {
+  width: 90%;
+  height: 90%;
+}
+#btndiv2 {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.email2 {
+  height: 20%;
+}
+.btn2 {
+  width: 40%;
+  height: 100%;
+  border-radius: 0.5vmax;
+  cursor: pointer;
+}
+.headdiv {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3498db;
+}
+#errordiv {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3498db;
+}
+.formdiv {
+  width: 100%;
+  height: 49.5%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+form {
+  width: 65%;
+  height: 70%;
+}
+.in1 {
+  width: 99%;
+  height: 10%;
+  font-size: 1.3vmax;
+  margin-top: 3vh;
+  border: 0;
+  border-bottom: 0.5vh solid #3498db;
+}
+input:focus {
+  outline: none;
+}
+.btndiv {
+  width: 100%;
+  height: 20%;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+.btn1 {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #3498db;
+  font-size: 1.5vmax;
+  cursor: pointer;
+  border: 0;
+}
+img {
+  width: 100%;
+  height: 35%;
+}
+@keyframes anim1 {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@keyframes anim2 {
+  100% {
+    left: 20%;
+  }
+  0% {
+    left: 50%;
+  }
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .window {
+    display: none;
+  }
+  .mobmain {
+    --height: 0px;
+    width: 100vw;
+    height: var(--height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .mobile {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #maincard {
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  #backswap {
+    width: 100%;
+    height: 70%;
+    background-color: #3498db;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: 0;
+  }
+  .mobhead {
+    width: 100%;
+    height: 20%;
+    color: white;
+    display: flex;
+    background-color: #3498db;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #errordiv2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-align: center;
+  }
+  .mobh1 {
+    font-size: calc((var(--height) * 3.5) / 100);
+  }
+  .mobh12 {
+    font-size: calc((var(--height) * 4) / 100);
+  }
+  #midlayer {
+    width: 100%;
+    height: 60%;
+    background-color: #3498db;
+  }
+  .mobnorm {
+    font-size: calc((var(--height) * 2.7) / 100);
+  }
+  @keyframes goTop {
+    0% {
+      top: 30%;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+  @keyframes goDown {
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 30%;
+    }
+  }
+  .email21 {
+    height: 30%;
+  }
+  .btndiv21 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc((var(--height) * 3) / 100);
+  }
+  .main11 {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .main111 {
+    width: 100%;
+    height: 80%;
+    z-index: 0;
+  }
+  .main12 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    z-index: -1;
+    background-color: white;
+  }
+  #main13 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.3vmax);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .formdiv {
+    height: 70%;
+  }
+}

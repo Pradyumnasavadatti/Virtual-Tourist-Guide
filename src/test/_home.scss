@@ -1,0 +1,494 @@
+.show2 {
+  display: none;
+}
+.show1 {
+  display: flex;
+}
+
+.show3 {
+  display: none;
+}
+.loadData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3498db;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmax;
+  color: white;
+}
+.footerx {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #3498db;
+  font-size: medium;
+  padding-bottom: 10vh;
+}
+td {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+.card__container {
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    width: 100%;
+    text-align: left;
+
+    text-transform: capitalize;
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: #3498db;
+  }
+
+  &--inner {
+    width: 90%;
+    height: 300px;
+    display: block;
+    &--card2 {
+      width: 28vw;
+      height: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &--card {
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        margin-left: 30px;
+        transition: all 0.1s ease;
+        border-radius: 2vw;
+        box-shadow: 0vmax 0vmax 1.3vmax 0.2vmax rgba(0, 0, 0, 0.7);
+        .placeName {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 0vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          z-index: -1;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .myh1 {
+          font-size: 2.5vmax;
+          font-weight: bolder;
+          font-variant: small-caps;
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          position: relative;
+        }
+        h2 {
+          color: rgb(58, 58, 58);
+          font-size: 1.3vw;
+          font-weight: 600;
+          padding-left: 8px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-bottom: 0rem;
+          text-align: left;
+          line-height: 1;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          -webkit-box-pack: center;
+          justify-content: center;
+          transition: all 0.1s ease-out;
+          border-radius: 2vw;
+        }
+
+        img:hover {
+          z-index: 0;
+          cursor: pointer;
+          //animation: animat3 1s linear forwards;
+        }
+        .wall {
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0);
+          z-index: 3;
+          width: 53vmin;
+          height: 80%;
+          border-radius: 2vw;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          color: white;
+          overflow: hidden;
+        }
+        .wallid {
+          background-color: rgba(0, 0, 0, 0.5);
+          width: 25%;
+          height: 30%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          border-top-left-radius: 60%;
+        }
+        .wallh1 {
+          color: white;
+          text-align: center;
+        }
+        #numbi {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          top: -200%;
+        }
+        .wall:hover ~ .placeName,
+        .placeName:hover {
+          z-index: 1;
+          backdrop-filter: blur(0.2vmax);
+          animation: animat 0.5s ease forwards;
+          cursor: pointer;
+        }
+        .placeName:not(:hover) {
+          z-index: 1;
+          animation: animat2 0.5s linear forwards;
+        }
+        .wall:hover + img {
+          animation: animat3 1s linear forwards;
+        }
+        .wall:not(:hover) + img {
+          animation: animat4 0.5s linear forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animat {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@keyframes animat2 {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@keyframes animat3 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.06);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  75% {
+    transform: scale(1.18);
+  }
+  100% {
+    transform: scale(1.24);
+  }
+}
+@keyframes animat4 {
+  100% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.06);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  25% {
+    transform: scale(1.18);
+  }
+  0% {
+    transform: scale(1.24);
+  }
+}
+
+// .slick-next,
+// .slick-prev {
+//   padding: 0px;
+//   width: 2vw;
+//   height: 2vw;
+//   cursor: pointer;
+//   border: none;
+//   border-radius: 5vw;
+//   background-color: #fff;
+//   z-index: 99 !important;
+//   //box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+//   top: 40%;
+//   &:hover {
+//     background-color: #fff;
+//   }
+// }
+.ImageSlider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+}
+
+.BadamiDetails {
+  font-family: "Montserrat", sans-serif; /* font-size: 16px; */
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 10vh;
+  box-sizing: border-box;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+.NearByM {
+  margin-left: 5vw;
+  margin-bottom: -5vh;
+}
+// .slick-next {
+//   // margin-right: 3.2%;
+// }
+// .slick-prev {
+//   // margin-left: .;
+// }
+@media only screen and (max-width: 1050px) {
+  .show1 {
+    display: none;
+  }
+  .show2 {
+    display: none;
+  }
+  .show3 {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .show1 {
+    display: none;
+  }
+  .show2 {
+    display: flex;
+  }
+  .show3 {
+    display: none;
+  }
+  .card__container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    h1 {
+      width: 100%;
+      text-align: left;
+
+      text-transform: capitalize;
+      font-size: 2.2vmax;
+      font-weight: 600;
+      color: #3498db;
+    }
+
+    &--inner {
+      width: 85vw;
+      height: 30vmax;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      &--card2 {
+        width: 80vw;
+        height: 30vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--card {
+          width: 100%;
+          height: 80%;
+          overflow: hidden;
+          color: #fff;
+          font-size: 50px;
+          text-align: center;
+          transition: all 0.1s ease;
+          border-radius: 2vw;
+          box-shadow: 0vmax 0vmax 1.3vmax 0.2vmax rgba(0, 0, 0, 0.7);
+          .placeName {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          .myh1 {
+            font-size: 2.5vmax;
+            font-weight: bolder;
+            font-variant: small-caps;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            position: relative;
+          }
+          h2 {
+            color: rgb(58, 58, 58);
+            font-size: 1.3vw;
+            font-weight: 600;
+            padding-left: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-bottom: 0rem;
+            text-align: left;
+            line-height: 1;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            -webkit-box-pack: center;
+            justify-content: center;
+            transition: all 0.1s ease-out;
+            border-radius: 2vw;
+          }
+
+          img:hover {
+            z-index: 0;
+            cursor: pointer;
+            //animation: animat3 1s linear forwards;
+          }
+          .wall {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0);
+            z-index: 2;
+            top: 0vh;
+            width: 100%;
+            height: 100%;
+            border-radius: 2vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            color: white;
+            overflow: hidden;
+          }
+          .wallid {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 20%;
+            height: 30%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            border-top-left-radius: 60%;
+          }
+          .wallh1 {
+            color: white;
+            text-align: center;
+          }
+          #numbi {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            top: -200%;
+          }
+          .wall:hover ~ .placeName,
+          .placeName:hover {
+            z-index: 1;
+            backdrop-filter: blur(0.2vmax);
+            animation: animat 0.5s ease forwards;
+            cursor: pointer;
+          }
+          .placeName:not(:hover) {
+            z-index: 1;
+            animation: animat2 0.5s linear forwards;
+          }
+          .wall:hover + img {
+            animation: animat3 1s linear forwards;
+          }
+          .wall:not(:hover) + img {
+            animation: animat4 0.5s linear forwards;
+          }
+        }
+      }
+    }
+  }
+}
+.slick-next,
+.slick-prev {
+  padding: 0vw;
+  width: 2.5vmax;
+  height: 2.5vmax;
+  cursor: pointer;
+  border: none;
+  border-radius: 5vw;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bolder;
+  color: white;
+  z-index: 99 !important;
+  //box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+  top: 50%;
+}
+.slick-next {
+  right: -3vw;
+}
+.slick-prev {
+  left: -3vw;
+}
+.ImageSlider {
+  height: 20vh;
+}
+.BadamiDetails {
+  margin: 5vh;
+}
+.NearByM {
+  margin-left: 8vw;
+  margin-bottom: 0.5vh;
+}
+@media only screen and (max-width: 1050px) {
+  .footerx {
+    padding-bottom: 5vh;
+  }
+}
