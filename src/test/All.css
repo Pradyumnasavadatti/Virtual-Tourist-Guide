@@ -1,0 +1,71 @@
+.NearMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NearSub {
+  width: 63%;
+  column-count: 2;
+}
+.NearHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3498db;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+.About {
+  width: 100%;
+  height: 100%;
+}
+.AboutHead {
+  width: 100%;
+  color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Abouttxt {
+  font-size: 4vmax;
+}
+.AboutContent1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutContent {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vmax;
+}
+
+@media only screen and (max-width: 1050px) {
+  .NearSub {
+    width: fit-content;
+    column-count: 1;
+  }
+  .aboutNow {
+    margin-left: 0;
+  }
+  .card__container--inner--card2--card .wall {
+    display: none;
+  }
+  .card__container--inner--card2--card .placeName:not(:hover) {
+    animation: animat 0.3s linear forwards;
+  }
+}
+@keyframes animat {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: -100%;
+  }
+}

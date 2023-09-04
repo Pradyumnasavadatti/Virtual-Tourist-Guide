@@ -1,0 +1,141 @@
+.speechBox {
+  width: 20vw;
+  height: 40vh;
+  background-color: #3498db;
+  position: fixed;
+  top: 48vh;
+  left: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5vmax;
+  border-bottom-left-radius: 5vmax;
+  border-top-right-radius: 5vmax;
+  z-index: 1000;
+  box-shadow: 0 0 2vmax 1vmax rgba(0, 0, 0, 0.5);
+}
+.speechBtn {
+  width: 8vmax;
+  height: 8vmax;
+  background-color: #3498db;
+  position: fixed;
+  left: 85vw;
+  top: 75vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 0 2vmax 1vmax rgba(0, 0, 0, 0.5);
+}
+.speechBtn:hover {
+  animation: anisay 1s linear forwards;
+}
+.speechBoxMain {
+  width: 90%;
+  height: 70%;
+  border-radius: 30%;
+}
+.sBMain {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8vmax;
+}
+.sBMain2 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.5vmax;
+  color: white;
+}
+.sBMain3 {
+  width: 100%;
+  height: 80%;
+}
+.sBMain4 {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.sBMain5 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  margin-top: 2vh;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+@keyframes anisay {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes anisay2 {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .speechBtn {
+    width: 10vmax;
+    height: 10vmax;
+    background-color: #3498db;
+    position: fixed;
+    left: auto;
+    right: 5vw;
+    top: 75vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 0 2vmax 1vmax rgba(0, 0, 0, 0.5);
+  }
+  .speechBox {
+    width: 55vw;
+    height: 25vh;
+    background-color: #3498db;
+    position: fixed;
+    top: 57vh;
+    left: auto;
+    right: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5vmax;
+    border-bottom-left-radius: 5vmax;
+    border-top-right-radius: 5vmax;
+    z-index: 1000;
+    box-shadow: 0 0 2vmax 1vmax rgba(0, 0, 0, 0.5);
+  }
+  .sBMain2 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2vmax;
+    color: white;
+  }
+}
