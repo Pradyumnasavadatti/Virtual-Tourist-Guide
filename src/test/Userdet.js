@@ -657,9 +657,9 @@ export default function Userdet() {
                   <td>
                     <a
                       style={{ textDecoration: "none", color: "white" }}
-                      href="https://instagram.com/ghorpade_nikhil_?igshid=YmMyMTA2M2Y="
+                      href="https://github.com/rakshit2621"
                     >
-                      Nikhil Ghorpade
+                      Rakshit Chopade
                     </a>
                   </td>
                 </tr>
